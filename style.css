@@ -17,7 +17,7 @@ header {
   top: 0;
   width: 100%;
   background: #2C2C2C;
-  padding: 15px;
+  padding: 1rem;
   z-index: 1000;
 }
 
@@ -25,7 +25,7 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 1.563rem;
 }
 
 nav a {
@@ -38,7 +38,16 @@ nav a {
 nav a:hover,
 nav a.active {
   color: #FFB74D;
-  border-bottom: 2px solid #FFB74D;
+  border-bottom: 0.125rem solid #FFB74D;
+}
+
+img {
+  height: 20px;
+}
+
+li, p {
+  text-align: center;
+  list-style-type: none;
 }
 
 section {
@@ -48,14 +57,29 @@ section {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  padding: 40px;
+  padding: 2.5rem;
   text-align: center;
 }
 
-#home { background: #F5F5F5; color: #000; }
-#portfolio { background: #E0E0E0; color: #000; }
-#about { background: #BDBDBD; color: #000; }
-#contact { background: #9E9E9E; color: #000; }
+#home { 
+  background: #F5F5F5; 
+  color: #000; 
+}
+
+#portfolio { 
+  background: #E0E0E0; 
+  color: #000; 
+}
+
+#about { 
+  background: #BDBDBD; 
+  color: #000; 
+}
+
+#contact { 
+  background: #9E9E9E; 
+  color: #000; 
+}
 
 section a {
   color: #2C2C2C;
@@ -69,8 +93,8 @@ section a:hover {
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  max-width: 400px;
+  gap: 1rem;
+  max-width: 25rem;
   width: 100%;
   text-align: left;
 }
@@ -80,18 +104,18 @@ label {
 }
 
 input, textarea {
-  padding: 10px;
-  border: 2px solid #2C2C2C;
-  border-radius: 5px;
+  padding: 0.625rem;
+  border: 0.125rem solid #2C2C2C;
+  border-radius: 0.313rem;
   font-size: 1rem;
 }
 
 button {
   background: #2C2C2C;
-  color: #fff;
-  padding: 12px;
+  color: #FFFFFF;
+  padding: 0.75rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.313rem;
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s;
@@ -100,4 +124,70 @@ button {
 button:hover {
   background: #FFB74D;
   color: #000;
+}
+
+#contact form {
+  margin-bottom: 2rem;
+}
+
+#contact .main {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.main .button {
+  background-color: #FFFFFF;
+  width: 3.5rem;
+  height: 3.5rem;
+  float: left;
+  border-radius: 3.125rem;
+  margin: 0 0.75rem;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
+  transition: all .3s ease-in-out;
+}
+
+.main .button a {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 0.5rem;
+}
+
+.main .button:hover {
+  width: 10rem;
+  color: #FFFFFF;
+}
+
+.main .button:nth-child(1):hover {
+  background-color: #4267b2;
+  color: #FFFFFF;
+}
+
+.main .button:nth-child(2):hover {
+  background-color: #24292f;
+  color: #f5f5f5;
+}
+
+.button .s-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  text-align: center;
+  transition: all .3s ease-in-out;
+}
+
+.button .s-icon i {
+  font-size: 1.5rem;
+}
+
+.button span {
+  font-size: 1.125rem;
+  font-weight: 600;
 }

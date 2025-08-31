@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,28 +23,40 @@
   </section>
 
   <section id="portfolio">
-    <h2>Mes projets</h2>
-    <p>Voici quelques-unes de mes réalisations.</p>
+    <h2>Mes projets</h2></br>
+
+    <div class="projets">
+      <ul>
+        <li><img src="IMG/ToDoList.png"> ToDoList</li>
+        <p>Permet de garder une liste de choses à faire en local storage et de supprimmer les tâches que l'on souhaite ou juste rayer celles réalisées</p>
+          <br/>
+        <li><img src="IMG/Quiz.png"> Quiz</li>
+        <p>Projet réalisé à trois en tant que premier projet collectif en formation</p><br/>
+        <li><img src="IMG/Guess.png"><a href="https://github.com/DwoDwoS/Exercices_Individuels_ADA/tree/main/Exercices_Individuels/3.%20Guess_A_Number" target="_blank"> Guess A Number<a></a></li>
+        <p>Premier projet solo, le P1 rentre un nombre puis le P2 essaye de retrouver ce nombre dans un delta de 0 à 50</p><br/>
+        <li><img src="IMG/humour.png"> Générateur de blagues</li>
+        <p>Se sert d'une API pour récupérer un ensemble de blagues, avec possibilité de passer ou revenir sur celles-ci</p>
+      </ul>
+    </div>
   </section>
 
   <section id="about">
     <h2>À propos de moi</h2></br>
 
-    <p>Je m'appelle <b>Elouan</b>, j'ai 36 ans, je travaillais auparavant dans le social et plus particulièrement dans le cadre de la protection de l'enfance.<br/>
-  Il m'a été souvent demandé de <b>travailler en équipe pluridisciplinaire</b> ainsi que sur la <b>réalisation de projet</b>.</p>
-
+  <p>Je m'appelle <strong>Elouan</strong>, j'ai 36 ans, je travaillais auparavant dans le social et plus particulièrement dans le cadre de la protection de l'enfance.<br/>
+    Il m'a été souvent demandé de <strong>travailler en équipe pluridisciplinaire</strong> ainsi que sur la <strong>réalisation de projet</strong>.</p>
   <p>Après avoir passé une dizaine d'années dans le social, et m'étant investis longtemps dans ce domaine, j'ai décidé de me réorienter.<br/>
   Ayant de nombreux proches dans le domaine de la tech et du code, je me suis posé la question de faire un virage à 180 degré pour m'y diriger.<br/> 
-  Je m'étais renseigné sur le métier de <i><b>Scrum Master</b></i> et de la <i><b>méthode Agile</b></i>, pour permettre de faire une passerelle entre mon ancien métier et le nouveau.<br/> 
+  Il y a quelques années, je m'étais déjà renseigné sur le métier de <em><strong>Scrum Master</strong></em> et de la <em><strong>méthode Agile</strong></em>, pour permettre de faire une passerelle entre mon ancien métier et le nouveau.<br/> 
   Cependant, je n'avais encore aucune notion de code à mon actif à ce moment-là.</p>
 
   <p>J'ai donc décidé de rechercher une école afin d'apprendre à coder et pouvoir réaliser des projets personnels puis par la suite intégrer une équipe dynamique pour mener à bien d'autres projets.<br/>
-  Je me suis tourné vers <a href="https://adatechschool.fr/" target="_blank"><b>ADA Tech School Nantes</b></a> qui propose une <b>formation de 9 mois puis 12 à 24 mois d'alternance en entreprise</b> avec un jour de regroupement par semaine.<br/>
-  Cela me permettrait de rester dans le monde du travail par la suite et <b>acquérir des compétences</b> avant d'intégrer une entreprise sans le statut d'alternant.
+  Je me suis tourné vers <a href="https://adatechschool.fr/" target="_blank"><strong>ADA Tech School Nantes</strong></a> qui propose une <strong>formation de 9 mois puis 12 à 24 mois d'alternance en entreprise</strong> avec un jour de regroupement par semaine.<br/>
+  Cela me permettrait de rester dans le monde du travail par la suite et <strong>acquérir des compétences</strong> avant d'intégrer une entreprise sans le statut d'alternant.
   J'ai réalisé de nombreux ateliers avec ADA Tech School, avant de l'intégrer, ce qui m'a permis de me faire une idée sur la pédagogie qui y était appliquée et me familiariser avec des éléments de code.<br/>
   En parallèle, j'ai appris sur différents sites, comme OpenClassRooms, Coddy.tech, Mimo, etc., essayant de mettre en pratique ce que j'apprenais afin d'avoir des bases avant de rentrer en formation.</p>
 
-  <p>En définitive, <i>j'apprécie <b>résoudre les casses-têtes</b> et <b>réfléchir à des projets à plusieurs</b>, ainsi qu'<b>apprendre de nouvelles choses</b>.</i></p>
+  <p>En définitive, <em>j'apprécie <strong>résoudre les casses-têtes</strong> et <strong>réfléchir à des projets à plusieurs</strong>, ainsi qu'<strong>apprendre de nouvelles choses</strong>.</em></p>
   </section>
 
   <section id="contact">
@@ -60,6 +73,21 @@
 
     <button type="submit">Envoyer</button>
   </form>
+
+  <div class="main">
+      <div class="button">
+        <div class="s-icon">
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <span><a href="https://www.linkedin.com/in/elouan-gauriaud-a62b04371/" target="_blank">LinkedIn</a></span>
+      </div>
+    <div class="button">
+        <div class="s-icon">
+          <i class="fa-brands fa-github"></i>
+        </div>
+        <span><a href="https://github.com/DwoDwoS" target="_blank">GitHub</a></span>
+    </div>
+  </div>
 </section>
 
 
