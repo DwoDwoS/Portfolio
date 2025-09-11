@@ -13,6 +13,15 @@ p {
   font-size: 1.2rem;
 }
 
+a.skiplink {
+   position: absolute;
+   left: -99999px;
+}
+
+a.skiplink:focus {
+   position: static;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -27,7 +36,7 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 1.563rem;
+  gap: 4rem;
   font-size: 2rem;
 }
 
@@ -67,6 +76,10 @@ section {
 h1 {
    color: #000;
    filter: brightness(150%);
+}
+
+h2 {
+  margin-bottom: 5rem;
 }
 
 #home { 
