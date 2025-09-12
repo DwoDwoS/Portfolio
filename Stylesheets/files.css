@@ -98,7 +98,7 @@ body {
 
 .file-title {
     font-size: 1.2rem;
-    color: #ff6b35;
+    color: #f0f0f0;
     margin-bottom: 8px;
     font-weight: bold;
 }
@@ -118,7 +118,7 @@ body {
 
 .tech-tag {
     background: rgba(255, 107, 53, 0.2);
-    color: #ff6b35;
+    color: #f0f0f0;
     padding: 2px 8px;
     border-radius: 12px;
     font-size: 0.7rem;

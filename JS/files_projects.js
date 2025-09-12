@@ -3,8 +3,8 @@ const projects = [
                 id: 1,
                 title: "Adaopte",
                 description: "Application de recherche d'animaux abandonnés pour les adopter.",
-                preview: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect fill='%23ff6b35' width='300' height='200'/%3E%3Ctext x='150' y='100' font-family='Arial' font-size='20' fill='white' text-anchor='middle'%3EADAOPTE%3C/text%3E%3C/svg%3E",
-                fullImage: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect fill='%23ff6b35' width='600' height='400'/%3E%3Ctext x='300' y='200' font-family='Arial' font-size='30' fill='white' text-anchor='middle'%3EAdaopte%3C/text%3E%3C/svg%3E",
+                preview: "assets/IMG/adaopte.svg",
+                fullImage: "assets/IMG/adaopte.svg",
                 technologies: ["HTML5", "CSS", "Tailwind", "JavaScript"],
                 fullDescription: "Une application qui permet de mettre en relation des personnes avec des animaux abandonnés, afin de les adopter. Avec une possibilité de devenir bénévole pour aider et prendre soin des animaux.",
                 demoLink: "#",
@@ -41,7 +41,7 @@ const projects = [
                 technologies: ["HTML5", "CSS", "JavaScript"],
                 fullDescription: "Traducteur de français vers latin en temps réel.",
                 demoLink: "#",
-                githubLink: "#"
+                githubLink: "https://github.com/DwoDwoS/Exercices_Individuels_ADA/tree/main/Exercices_Individuels/5.%20Parlez%20vous%20le%20morse"
             }
         ];
 
