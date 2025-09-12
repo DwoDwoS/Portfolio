@@ -83,7 +83,7 @@ h2 {
 }
 
 #home { 
-  background-image: url(IMG/background_img.jpg);
+  background-image: url(/assets/IMG/background_img.jpg);
   background-size: cover;
   filter: opacity(200%);
 }

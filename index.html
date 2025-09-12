@@ -6,7 +6,8 @@
   <title>Mon Portfolio</title>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Stylesheets/style.css">
+  <link rel="stylesheet" href="Stylesheets/files.css">
 </head>
 <body>
 
@@ -30,20 +31,21 @@
 <main id="contenu" tabindex="-1" class="min-h-screen">
     
   <section id="portfolio">
-    <h2>Mes projets</h2></br>
 
-    <div class="projects">
-      <ul>
-        <li><img src="IMG/ToDoList.png"> ToDoList</li>
-        <p>Permet de garder une liste de choses à faire en local storage et de supprimmer les tâches que l'on souhaite ou juste rayer celles réalisées</p>
-          <br/>
-        <li><img src="IMG/Quiz.png"> Quiz</li>
-        <p>Projet réalisé à trois en tant que premier projet collectif en formation</p><br/>
-        <li><img src="IMG/Guess.png"><a href="https://github.com/DwoDwoS/Exercices_Individuels_ADA/tree/main/Exercices_Individuels/3.%20Guess_A_Number" target="_blank"> Guess A Number<a></a></li>
-        <p>Premier projet solo, le P1 rentre un nombre puis le P2 essaye de retrouver ce nombre dans un delta de 0 à 50</p><br/>
-        <li><img src="IMG/humour.png"> Générateur de blagues</li>
-        <p>Se sert d'une API pour récupérer un ensemble de blagues, avec possibilité de passer ou revenir sur celles-ci</p>
-      </ul>
+    <div class="container">
+        <h1 class="title typewriter">/// PROJETS CLASSIFIÉS ///</h1>
+        
+        <div class="filing-cabinet" id="filingCabinet">
+        </div>
+    </div>
+
+    <div class="project-modal" id="projectModal">
+        <div class="project-desk">
+            <button class="close-btn" onclick="closeProject()">&times;</button>
+            <div class="project-full" id="projectContent">
+
+            </div>
+        </div>
     </div>
   </section>
 </main>
@@ -98,6 +100,7 @@
     </div>
 </section>
 
-  <script defer src="script.js"></script>
+  <script defer src="JS/script.js"></script>
+  <script defer src="JS/files_projects.js"  ></script>
 </body>
 </html>
