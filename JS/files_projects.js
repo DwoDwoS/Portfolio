@@ -14,7 +14,7 @@ const projects = [
                 id: 2,
                 title: "To Do List",
                 description: "Application de gestion de tâches en temps réel.",
-                preview: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect fill='%234CAF50' width='300' height='200'/%3E%3Ctext x='150' y='100' font-family='Arial' font-size='18' fill='white' text-anchor='middle'%3ETo Do List%3C/text%3E%3C/svg%3E",
+                preview: "assets/IMG/Todolist_preview.png",
                 fullImage: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect fill='%234CAF50' width='600' height='400'/%3E%3Ctext x='300' y='200' font-family='Arial' font-size='30' fill='white' text-anchor='middle'%3ETo Do List%3C/text%3E%3C/svg%3E",
                 technologies: ["HTML5", "CSS", "JavaScript"],
                 fullDescription: "Application permettant d'ajouter ou de supprimmer des tâches à faire, possibilité de les rayer en cliquant dessus. Système de local storage afin de garder ses tâches entre deux connections.",
@@ -25,7 +25,7 @@ const projects = [
                 id: 3,
                 title: "Weather Dataviz",
                 description: "Dashboard météo interactif avec prévisions sur plusieurs jours.",
-                preview: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect fill='%232196F3' width='300' height='200'/%3E%3Ctext x='150' y='100' font-family='Arial' font-size='18' fill='white' text-anchor='middle'%3EWeather Dataviz%3C/text%3E%3C/svg%3E",
+                preview: "assets/IMG/Weather_preview.png",
                 fullImage: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect fill='%232196F3' width='600' height='400'/%3E%3Ctext x='300' y='200' font-family='Arial' font-size='30' fill='white' text-anchor='middle'%3EWeather Dataviz%3C/text%3E%3C/svg%3E",
                 technologies: ["HTML5", "CSS", "OpenWeather API", "JavaScript"],
                 fullDescription: "Dashboard météorologique interactif utilisant l'API OpenWeatherMap. Inclut la météo en temps réelle et les prévisions sur 7 jours.",
@@ -36,12 +36,23 @@ const projects = [
                 id: 4,
                 title: "Traducteur de Morse",
                 description: "Un traducteur de français (alphabet latin) en Morse et inversement.",
-                preview: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect fill='%239C27B0' width='300' height='200'/%3E%3Ctext x='150' y='100' font-family='Arial' font-size='18' fill='white' text-anchor='middle'%3ETraducteur%3C/text%3E%3C/svg%3E",
+                preview: "assets/IMG/Morse_preview.png",
                 fullImage: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect fill='%239C27B0' width='600' height='400'/%3E%3Ctext x='300' y='200' font-family='Arial' font-size='30' fill='white' text-anchor='middle'%3ETraducteur%3C/text%3E%3C/svg%3E",
                 technologies: ["HTML5", "CSS", "JavaScript"],
                 fullDescription: "Traducteur de français vers latin en temps réel.",
                 demoLink: "#",
                 githubLink: "https://github.com/DwoDwoS/Exercices_Individuels_ADA/tree/main/Exercices_Individuels/5.%20Parlez%20vous%20le%20morse"
+            },
+            {
+                id: 5,
+                title: "Mastermind",
+                description: "Une adaptation du célèbre jeu de société, Mastermind. Vous allez devoir deviner quel est le code de couleur secret.",
+                preview: "assets/IMG/Mastermind.png",
+                fullImage: "assets/IMG/Mastermind_colors.png",
+                technologies: ["Python", "CustomTKinter"],
+                fullDescription: "Adaptation du jeu Mastermind en utilisant Python et CustomTKinter pour l'aspect visuel.",
+                demoLink: "#",
+                githubLink: "https://github.com/DwoDwoS/Exercices_Individuels_ADA/tree/main/Exercices_Individuels/8.%20Mastermind"
             }
         ];
 

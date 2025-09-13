@@ -91,6 +91,7 @@ h2 {
 #portfolio { 
   background: #E0E0E0; 
   color: #000; 
+  height: auto;
 }
 
 #about { 
