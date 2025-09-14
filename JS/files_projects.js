@@ -56,74 +56,74 @@ const projects = [
             }
         ];
 
-        function createFilingCabinet() {
-            const cabinet = document.getElementById('filingCabinet');
+function createFilingCabinet() {
+    const cabinet = document.getElementById('filingCabinet');
             
-            projects.forEach(project => {
-                const drawer = document.createElement('div');
-                drawer.className = 'file-drawer';
-                drawer.innerHTML = `
-                    <div class="file-tab">PROJET #${project.id.toString().padStart(3, '0')}</div>
-                    <div class="classified-stamp">CLASSIFIÉ</div>
-                    <div class="file-content" onclick="openProject(${project.id})">
-                        <div class="file-preview">
-                            <img src="${project.preview}" alt="${project.title}">
-                        </div>
-                        <div class="file-info">
-                            <div class="file-title">${project.title}</div>
-                            <div class="file-description">${project.description}</div>
-                            <div class="file-tech">
-                                ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-                            </div>
+    projects.forEach(project => {
+        const drawer = document.createElement('div');
+            drawer.className = 'file-drawer';
+            drawer.innerHTML = `
+                <div class="file-tab">PROJET #${project.id.toString().padStart(3, '0')}</div>
+                <div class="classified-stamp">CLASSIFIÉ</div>
+                <div class="file-content" onclick="openProject(${project.id})">
+                    <div class="file-preview">
+                        <img src="${project.preview}" alt="${project.title}">
+                    </div>
+                    <div class="file-info">
+                        <div class="file-title">${project.title}</div>
+                        <div class="file-description">${project.description}</div>
+                        <div class="file-tech">
+                            ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                         </div>
                     </div>
-                `;
-                cabinet.appendChild(drawer);
-            });
-        }
-
-        function openProject(projectId) {
-            const project = projects.find(p => p.id === projectId);
-            if (!project) return;
-
-            const modal = document.getElementById('projectModal');
-            const content = document.getElementById('projectContent');
-            
-            content.innerHTML = `
-                <img src="${project.fullImage}" alt="${project.title}">
-                <h2>${project.title}</h2>
-                <p>${project.fullDescription}</p>
-                <div class="file-tech">
-                    ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-                </div>
-                <div class="project-links">
-                    <a href="${project.demoLink}" class="project-link" target="_blank">Voir la démo</a>
-                    <a href="${project.githubLink}" class="project-link" target="_blank">Code source</a>
                 </div>
             `;
+        cabinet.appendChild(drawer);
+    });
+}
+
+function openProject(projectId) {
+    const project = projects.find(p => p.id === projectId);
+        if (!project) return;
+
+        const modal = document.getElementById('projectModal');
+        const content = document.getElementById('projectContent');
             
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
+        content.innerHTML = `
+            <img src="${project.fullImage}" alt="${project.title}">
+            <h2>${project.title}</h2>
+            <p>${project.fullDescription}</p>
+            <div class="file-tech">
+                ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+            </div>
+            <div class="project-links">
+                <a href="${project.demoLink}" class="project-link" target="_blank">Voir la démo</a>
+                <a href="${project.githubLink}" class="project-link" target="_blank">Code source</a>
+            </div>
+        `;
+            
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+}
 
-        function closeProject() {
-            const modal = document.getElementById('projectModal');
-            modal.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
+function closeProject() {
+    const modal = document.getElementById('projectModal');
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+}
 
-        document.getElementById('projectModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeProject();
-            }
-        });
+document.getElementById('projectModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeProject();
+    }
+});
 
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closeProject();
-            }
-        });
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeProject();
+    }
+});
 
-        document.addEventListener('DOMContentLoaded', function() {
-            createFilingCabinet();
-        });
+document.addEventListener('DOMContentLoaded', function() {
+    createFilingCabinet();
+});
