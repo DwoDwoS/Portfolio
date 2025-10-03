@@ -51,9 +51,7 @@ Chaque projet inclus dans ce portfolio est accompagné de :
  - Approfondir mes compétences en React et en API REST.
  - Continuer à apprendre JAVA.
  - Continuer à prendre du plaisir à créer de nouveaux projets et apprendre à coder.
+ - Explorer des outils DevOps (Docker, CI/CD).
+ - Développer un projet personnel complet (front + back).
 
 Merci à vous pour la lecture et pour la visite!
-
-Explorer des outils DevOps (Docker, CI/CD).
-
-Développer un projet personnel complet (front + back).
