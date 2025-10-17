@@ -50,8 +50,8 @@ body {
     position: absolute;
     top: -0.938rem;
     left: 1.25rem;
-    background: #ff6b35;
-    color: white;
+    background: #ad8762;
+    color: #FFFFFF;
     padding: 0.313rem 0.938rem;
     border-radius: 0.313rem 0.313rem 0 0;
     font-weight: bold;
@@ -70,11 +70,11 @@ body {
     width: 100%;
     height: 12.5rem;
     background: #1a1a1a;
-    border: 0.125rem dashed #666;
+    border: 0.125rem #666;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: cover;
     transition: all 0.3s ease;
 }
 
@@ -104,7 +104,7 @@ body {
 }
 
 .file-description {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.4;
     color: #ccc;
 }
@@ -113,6 +113,7 @@ body {
     margin-top: 0.625rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 0.313rem;
 }
 
@@ -121,7 +122,7 @@ body {
     color: #f0f0f0;
     padding: 0.125rem 0.5rem;
     border-radius: 0.75rem;
-    font-size: 0.7rem;
+    font-size: 0.938rem;
     border: 0.063rem solid rgba(255, 107, 53, 0.3);
 }
 
@@ -160,7 +161,7 @@ body {
     top: 0.938rem;
     right: 1.25rem;
     background: #1a1a1a;
-    color: white;
+    color: #FFFFFF;
     border: none;
     width: 2.5rem;
     height: 2.5rem;
@@ -171,7 +172,8 @@ body {
 }
 
 .close-btn:hover {
-    background: #ff4500;
+    background: #FFFFFF;
+    color:#1a1a1a;
     transform: rotate(90deg);
 }
 
@@ -182,13 +184,14 @@ body {
 .project-full img {
     max-width: 100%;
     max-height: 25rem;
+    height: 20rem;
     border-radius: 0.625rem;
     margin-bottom: 1.25rem;
     box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.5);
 }
 
 .project-full h2 {
-    color: #ff6b35;
+    color: #FFFFFF;
     margin-bottom: 0.938rem;
     font-size: 2rem;
 }
@@ -210,17 +213,18 @@ body {
 }
 
 .project-link {
-    background: #ff6b35;
-    color: white;
+    background: #1a1a1a;
+    color: #FFFFFF;
     padding: 0.625rem 1.25rem;
     text-decoration: none;
+    font-size: 1.5rem;
     border-radius: 1.563rem;
     transition: all 0.3s ease;
     font-weight: bold;
 }
 
 .project-link:hover {
-    background: #ff4500;
+    background: #666;
     transform: translateY(-2px);
     box-shadow: 0 0.313rem 0.938rem rgba(255, 107, 53, 0.4);
 }
