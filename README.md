@@ -15,6 +15,8 @@ Ce portfolio me permet de :
 
  - Montrer mon évolution en tant que développeur·se web.
 
+Vous pouvez vous rendre sur ce lien pour le consulter : https://dwodwos.github.io/Portfolio/
+
 ## Compétences développées
 
 Au fil de la formation, j’ai travaillé sur différents langages, frameworks et outils, notamment :
