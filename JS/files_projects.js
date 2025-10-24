@@ -18,7 +18,7 @@ const projects = [
         fullImage: "assets/IMG/Todolist_preview.png",
         technologies: ["HTML5", "CSS", "JavaScript"],
         fullDescription: "Application permettant d'ajouter ou de supprimmer des tâches à faire, possibilité de les rayer en cliquant dessus. Système de local storage afin de garder ses tâches entre deux connections.",
-        demoLink: "#",
+        demoLink: "https://dwodwos.github.io/ToDoList/",
         githubLink: "https://github.com/DwoDwoS/ToDoList"
     },
     {
