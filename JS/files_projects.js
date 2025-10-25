@@ -18,7 +18,7 @@ const projects = [
         fullImage: "assets/IMG/Todolist_preview.png",
         technologies: ["HTML5", "CSS", "JavaScript"],
         fullDescription: "Application permettant d'ajouter ou de supprimmer des tâches à faire, possibilité de les rayer en cliquant dessus. Système de local storage afin de garder ses tâches entre deux connections.",
-        demoLink: "#",
+        demoLink: "https://dwodwos.github.io/ToDoList/",
         githubLink: "https://github.com/DwoDwoS/ToDoList"
     },
     {
@@ -29,7 +29,7 @@ const projects = [
         fullImage: "assets/IMG/Weather_preview.png",
         technologies: ["HTML5", "CSS", "OpenWeather API", "JavaScript"],
         fullDescription: "Dashboard météorologique interactif utilisant l'API OpenWeatherMap. Inclut la météo en temps réelle et les prévisions sur 7 jours.",
-        demoLink: "#",
+        demoLink: "https://dwodwos.github.io/Weather-Dataviz/Public/index.html",
         githubLink: "https://github.com/Margot-g44/Dataviz"
     },
     {
@@ -51,7 +51,7 @@ const projects = [
         fullImage: "assets/IMG/adaopte.svg",
         technologies: ["HTML5", "CSS", "Tailwind", "JavaScript"],
         fullDescription: "Une application qui permet de mettre en relation des personnes avec des animaux abandonnés, afin de les adopter. Avec une possibilité de devenir bénévole pour aider et prendre soin des animaux.",
-        demoLink: "#",
+        demoLink: "https://dwodwos.github.io/projet_Adaopte/homepage.html",
         githubLink: "https://github.com/DwoDwoS/projet_Adaopte"
         
     },
