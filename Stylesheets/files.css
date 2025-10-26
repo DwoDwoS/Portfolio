@@ -16,21 +16,10 @@ body {
     text-align: center;
     margin-bottom: 3.125rem;
     font-size: 2.5rem;
-    color: #ff6b35;
+    color: #FFFFFF;
     text-shadow: 0 0 1.25rem rgba(255, 107, 53, 0.5);
     letter-spacing: 0.188rem;
 }
-
-/* .file-cover {
-    background-color: #ad8762;
-    border: 0.125rem solid #555;
-    border-radius: 0.625rem;
-    padding: 1.25rem;
-    position: relative;
-    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.5);
-    transform-style: preserve-3d;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-} */
 
 .filing-cabinet {
     perspective: 62.5rem;
@@ -41,63 +30,101 @@ body {
 }
 
 .file-drawer {
-    background-color: #ad8762;
+    position: relative;
+    height: 450px;
+    transform-style: preserve-3d;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border: 0.125rem solid #555;
     border-radius: 0.625rem;
-    padding: 1.25rem;
-    position: relative;
     box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.5);
-    /* transform-style: preserve-3d;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
 }
 
 .file-drawer:hover {
-    transform: translateY(-0.625rem) rotateX(5deg);
-    box-shadow: 0 1.25rem 3.125rem rgba(255, 107, 53, 0.3);
+    transform: translateY(-0.625rem);
+}
+
+.file-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ad8762;
+    border: 0.125rem solid #555;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.5);
+    transform-origin: left center;
+    transition: ease-out 0.8s;
+    z-index: 13;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-cover::before {
+    content: 'CONFIDENTIEL';
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5rem;
+    transform: rotate(-25deg);
+    text-align: center;
+}
+
+.file-drawer:hover .file-cover {
+    transform: rotateY(-120deg);
+    content-visibility: hidden;
+    transition: ease-in-out 0.8s;
+    box-shadow: -0.625rem 0.625rem 1.875rem rgba(0, 0, 0, 0.6);
 }
 
 .file-tab {
     position: absolute;
-    top: -0.938rem;
+    top: -1.500rem;
     left: 1.25rem;
-    background: #FFFFFF;
+    background: #f2efefFF;
     color: #1a1a1a;
     padding: 0.313rem 0.938rem;
-    border:#ad8762 0.250rem solid; 
+    border: #ad8762 0.250rem solid;
     border-radius: 0.313rem 0.313rem 0 0;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     box-shadow: 0 -0.313rem 0.625rem rgba(255, 107, 53, 0.3);
+    z-index: 11;
 }
 
 .file-content {
-    cursor: pointer;
     position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #ad8762;
+    border: 1rem solid #ad8762;
+    border-radius: 0.625rem;
     overflow: hidden;
-    border-radius: 0.5rem;
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .file-preview {
     width: 100%;
     height: 12.5rem;
-    /* background: #1a1a1a; */
-    border: 0.125rem #666;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: cover;
-    transition: all 0.3s ease;
+    overflow: hidden;
+    /* transition: all 0.3s ease; */
 }
 
 .file-preview img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: all 0.3s ease;
+    border: #FFFFFF 0.313rem solid;
+    transition: all 1s ease;
 }
 
 .file-content:hover .file-preview img {
-    opacity: 1;
     transform: scale(1.05);
 }
 
@@ -105,7 +132,9 @@ body {
     padding: 0.938rem;
     background: #FFFFFF;
     opacity: 0.95;
-    height: 25vh;
+    height: calc(100% - 12.5rem);
+    display: flex;
+    flex-direction: column;
 }
 
 .file-title {
@@ -119,6 +148,7 @@ body {
     font-size: 1rem;
     line-height: 1.4;
     color: #1a1a1a;
+    flex-grow: 1;
 }
 
 .file-tech {
@@ -166,6 +196,7 @@ body {
     box-shadow: 0 1.875rem 5rem rgba(0, 0, 0, 0.8);
     transform: scale(0.8);
     animation: slideUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    overflow-y: auto;
 }
 
 .close-btn {
@@ -181,11 +212,12 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    z-index: 10;
 }
 
 .close-btn:hover {
     background: #FFFFFF;
-    color:#1a1a1a;
+    color: #1a1a1a;
     transform: rotate(180deg);
 }
 
@@ -222,6 +254,7 @@ body {
     gap: 1.25rem;
     justify-content: center;
     margin-top: 1.25rem;
+    flex-wrap: wrap;
 }
 
 .project-link {
@@ -261,19 +294,15 @@ body {
     position: absolute;
     top: 0.625rem;
     right: 0.625rem;
-    background: #FFFFFF;
+    background: #f2efefFF;
     color: #dc143c;
     padding: 0.313rem 0.625rem;
-    border:#dc143c 0.125rem solid;
+    border: #dc143c 0.125rem solid;
     border-radius: 0.188rem;
     font-size: 0.7rem;
     font-weight: bold;
     transform: rotate(15deg);
-    z-index: 1000;
-}
-
-.file-drawer:hover .file-content {
-    transform: translateZ(0.625rem);
+    z-index: 12;
 }
 
 @keyframes typewriter {
