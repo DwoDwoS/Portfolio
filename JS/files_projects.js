@@ -53,12 +53,12 @@ const projects = [
         fullDescription: "Une application qui permet de mettre en relation des personnes avec des animaux abandonnés, afin de les adopter. Avec une possibilité de devenir bénévole pour aider et prendre soin des animaux.",
         demoLink: "https://dwodwos.github.io/projet_Adaopte/homepage.html",
         githubLink: "https://github.com/DwoDwoS/projet_Adaopte"
-        
+
     },
     {
         id: 6,
         title: "Adaction",
-        description: "Application de gestion des déchets pour une entreprise fictive nommée Adaction. Avec gestion de bénévoles.",
+        description: "Application de gestion des déchets pour une association fictive nommée Adaction.",
         preview: "assets/IMG/Adaction_login.png",
         fullImage: "assets/IMG/Adaction_login.png",
         technologies: ["React", "Vite", "Java", "Spring Boot", "NeonDB"],
@@ -70,11 +70,12 @@ const projects = [
 
 function createFilingCabinet() {
     const cabinet = document.getElementById('filingCabinet');
-            
+
     projects.forEach(project => {
         const drawer = document.createElement('div');
-            drawer.className = 'file-drawer';
-            drawer.innerHTML = `
+        drawer.className = 'file-drawer';
+        drawer.innerHTML = `
+            <div class="file-cover"> </div>
                 <div class="file-tab">PROJET #${project.id.toString().padStart(3, '0')}</div>
                 <div class="classified-stamp">CLASSIFIÉ</div>
                 <div class="file-content" onclick="openProject(${project.id})">
@@ -96,12 +97,12 @@ function createFilingCabinet() {
 
 function openProject(projectId) {
     const project = projects.find(p => p.id === projectId);
-        if (!project) return;
+    if (!project) return;
 
-        const modal = document.getElementById('projectModal');
-        const content = document.getElementById('projectContent');
-            
-        content.innerHTML = `
+    const modal = document.getElementById('projectModal');
+    const content = document.getElementById('projectContent');
+
+    content.innerHTML = ` 
             <img src="${project.fullImage}" alt="${project.title}">
             <h2>${project.title}</h2>
             <p>${project.fullDescription}</p>
@@ -113,29 +114,29 @@ function openProject(projectId) {
                 <a href="${project.githubLink}" class="project-link" target="_blank">Code source</a>
             </div>
         `;
-            
-        modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
 }
 
 function closeProject() {
     const modal = document.getElementById('projectModal');
-        modal.classList.remove('active');
-        document.body.style.overflow = 'auto';
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
 }
 
-document.getElementById('projectModal').addEventListener('click', function(e) {
+document.getElementById('projectModal').addEventListener('click', function (e) {
     if (e.target === this) {
         closeProject();
     }
 });
 
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
         closeProject();
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     createFilingCabinet();
 });
