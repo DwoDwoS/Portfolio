@@ -3,7 +3,7 @@
 ## École : ADA Tech School – Nantes
 
 Bienvenue sur mon portfolio !
-Ce dépôt a été créé dans le cadre de ma formation de Développeur·se Web chez ADA Tech School, une école inclusive qui met l’accent sur l’apprentissage par la pratique et le travail collaboratif.
+Ce dépôt a été créé dans le cadre de ma formation de Développeur Web chez ADA Tech School, une école inclusive qui met l’accent sur l’apprentissage par la pratique et le travail collaboratif.
 
 ## Objectif du portfolio
 
@@ -13,7 +13,7 @@ Ce portfolio me permet de :
 
  - Mettre en avant mes compétences techniques et mes apprentissages.
 
- - Montrer mon évolution en tant que développeur·se web.
+ - Montrer mon évolution en tant que développeur web.
 
 Vous pouvez vous rendre sur ce lien pour le consulter : https://dwodwos.github.io/Portfolio/
 
