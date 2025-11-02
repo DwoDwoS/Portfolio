@@ -29,7 +29,7 @@ const projects = [
         fullImage: "assets/IMG/Weather_preview.png",
         technologies: ["HTML5", "CSS", "OpenWeather API", "JavaScript"],
         fullDescription: "Dashboard météorologique interactif utilisant l'API OpenWeatherMap. Inclut la météo en temps réelle et les prévisions sur 7 jours.",
-        demoLink: "https://dwodwos.github.io/Weather-Dataviz/Public/index.html",
+        demoLink: "https://weather-dataviz.onrender.com/",
         githubLink: "https://github.com/Margot-g44/Dataviz"
     },
     {
@@ -47,11 +47,11 @@ const projects = [
         id: 5,
         title: "Adaopte",
         description: "Application de recherche d'animaux abandonnés pour les adopter.",
-        preview: "assets/IMG/adaopte.svg",
-        fullImage: "assets/IMG/adaopte.svg",
+        preview: "assets/IMG/Adaopte_homepage.png",
+        fullImage: "assets/IMG/Adaopte_adoption_page.png",
         technologies: ["HTML5", "CSS", "Tailwind", "JavaScript"],
         fullDescription: "Une application qui permet de mettre en relation des personnes avec des animaux abandonnés, afin de les adopter. Avec une possibilité de devenir bénévole pour aider et prendre soin des animaux.",
-        demoLink: "https://dwodwos.github.io/projet_Adaopte/homepage.html",
+        demoLink: "https://projet-adaopte.vercel.app/",
         githubLink: "https://github.com/DwoDwoS/projet_Adaopte"
 
     },
